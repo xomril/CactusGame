@@ -25,6 +25,15 @@
         #image2{
             position: relative;
         }
+        #controls{
+            position: relative;
+            left: 40px;
+            top: 220px;
+            text-align: center;
+            width:100px;
+            height: 85px;
+            background-color: #c0c0c0;
+        }
     </style>
 </head>
 <body  onkeydown='getKeyAndMove(event)'>
@@ -35,6 +44,12 @@
         <div id="scoresDisplay"></div>
         <img src="images/twitter.png" id="image2" height="45"/>
         <img src="images/guy.png" id="image1" height="45"/>
+        <div id="controls">
+            <button onclick="moveUp()">⬆️</button><br/>
+            <button onclick="moveLeft()">⬅️</button> &nbsp; &nbsp;
+            <button onclick="moveRight()">➡️</button> <br/>
+            <button onclick="moveDown()">⬇️</button>
+        </div>
     </div>
     
     
